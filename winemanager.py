@@ -18,8 +18,10 @@ class WineManager:
             environment["WINEPREFIX"] = prefix_path
 
             subprocess.run([f'{self.wine_path}winecfg'], env=environment)
-            os.system(f'cp {self.root}/dxvk/x64/*.dll {prefix_path}/drive_c/windows/system32')
-            os.system(f'cp {self.root}/dxvk/x32/*.dll {prefix_path}/drive_c/windows/syswow64')
+            os.system(f'rm -rf "{prefix_path}/drive_c/windows/system32/d3d10core.dll"')
+            os.system(f'rm -rf "{prefix_path}/drive_c/windows/system32/d3d11.dll"')
+            os.system(f'cp {self.root}/dxvk/x64/*.dll "{prefix_path}/drive_c/windows/system32"')
+            os.system(f'cp {self.root}/dxvk/x32/*.dll "{prefix_path}/drive_c/windows/syswow64"')
             
 
     def delete_prefix(self, prefix_name):
