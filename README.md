@@ -2,7 +2,6 @@
 Just a simple Python script to manage Wine prefixes and programs.
 
 # Installation
----
 1. Clone the repository to a folder (e.g ~/Documents/). Take note of the directory/folder `main.py` is in.
 2. Edit the `config.json` file.
 	1. `"WINE_BIN_PATH"`: Place the directory where your `wine` binary is (e.g `/opt/homebrew/bin`). You can install wine using `brew` or you can get them from [Gcenx](https://github.com/Gcenx/macOS_Wine_builds)
@@ -17,7 +16,6 @@ Whenever you copy your paths, they have to be absolute (e.g /Users/username/... 
  While not necessary you can place a pre built GPTK binary from Gcenx into the directory of `main.py`.
 
 # Usage
----
 Execute `main.py`. 
 
 ## Managing Prefixes
@@ -44,7 +42,6 @@ You can also manage the graphics backend used through the menus.
 You can run a program by selecting `1. Run a program`. The script will list all the shortcuts and you must type the name exactly. You can also pass any arguments for the .EXE. 
 
 # Why?
----
 I am aware of existing Wine managers for MacOS like [Whisky](https://github.com/Whisky-App/Whisky) and [CrossOver](https://www.codeweavers.com/crossover). These programs are much better and more intuitive than what I wrote and it is recommended you use them rather than my script. I was just tinkering with Wine because I couldn't get Age of Empires II HD to work on either and was getting tired of having to manually write out each command to run my games so I decided to write this program to make it easier. There are many more things needed to be implemented to reach parity with Whisky or CrossOver, and perhaps in the future it could be a viable alternative but as of now it's just a script for convenience. 
 
 If you look at the code you will very quickly realise that my programming knowledge is very primitive and you're right. I spent more time on StackOverflow than in VS Code lmao so obviously it's not the fastest or more optimised. It's also not the prettiest thing to use. 
