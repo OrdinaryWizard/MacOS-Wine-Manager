@@ -1,0 +1,6 @@
+{
+    "WINE_BIN_PATH": "Place your wine binary path here (e.g /opt/homebrew/bin/)",
+    "WINE_D3D_BIN_PATH": "Place your GPTK wine binary path here (e.g .../GPTK/wine/bin/)",
+    "PREFIX_PATH": "Place the path to put your wine prefixes",
+    "ROOT_PATH": "Place the path of the python script (e.g ~/Documents/Wine Manager/)"
+}

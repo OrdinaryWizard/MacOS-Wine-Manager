@@ -1,0 +1,16 @@
+{
+    "programs": {
+        "Program 1": {
+            "Path": "Path of the program",
+            "Prefix": "Prefix to use (specified in 'prefixes')",
+            "Settings": {
+                "Renderer": "What renderer to use (DXVK, D3DMetal or None)"
+            }
+        }
+    },
+    "prefixes": {
+        "Prefix 1": "Name of Prefix Folder",
+        "Prefix 2": "Name of Prefix Folder",
+        "You should erase this file, as the script will automatically manage all these things": "This file is just an example of how the script manages the prefixes and programs"
+    }
+}
