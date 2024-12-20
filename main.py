@@ -8,9 +8,9 @@ with open('settings.json', 'r') as file:
 with open('settings.json', 'r') as file: 
     prefixes = json.load(file)["prefixes"]
 
-config = open('config.json', 'r')
+config = json.load(open('config.json', 'r'))
 prefix_path = config["PREFIX_PATH"]
-config = json.load(config)
+
 manager = winemanager.WineManager(config["ROOT_PATH"], config["WINE_BIN_PATH"], prefix_path)
 d3dmetal_manager = winemanager.WineManager(config["ROOT_PATH"], config["WINE_D3D_BIN_PATH"], prefix_path)
 
